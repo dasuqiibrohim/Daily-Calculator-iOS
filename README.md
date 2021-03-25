@@ -1,3 +1,5 @@
-# DailyCalculatorAI4
+# Daily Calculator iOS
+Proyek Daily Calculator iOS yang dibuat dalam swift untuk mengimplementasikan Auto Layout.
 
-# Test
+# Getting Started
+Daily Calculator berisi implementasi Tata Letak Otomatis. Tata Letak Otomatis memudahkan untuk mendukung berbagai ukuran layar di aplikasi Anda. Tata Letak Otomatis pada swift, Membuat aplikasi jadi terlihat bagus dalam orientasi apa pun di berbagai perangkat. 
