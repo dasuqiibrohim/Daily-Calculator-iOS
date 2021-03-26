@@ -14,7 +14,7 @@ Contributors names and contact info
 * [Uplabs](https://www.uplabs.com/posts/calculator-app-90e0923d-c26b-4f19-9320-4e716271c868)
 
 # How to Use
-### Step 1: H6
+### Step 1:
 
 Download or clone this repo by using the link below:
 
