@@ -1,5 +1,5 @@
 # Daily Calculator iOS
-A Daily Calculator iOS project created in Swift using AutoLayout, Extensions, SubViews, dan Side Menu.
+A Daily Calculator iOS project created in Swift using AutoLayout, IBDesignable, SubViews, dan Side Menu.
 
 # Getting Started
 Daily Calculator contains the implementation of Automatic Layout. Auto Layout makes it easy to support multiple screen sizes in your app. Auto Layout on swift, Make apps look great in any orientation on various devices.
@@ -15,12 +15,10 @@ Contributors names and contact info
 
 # Daily Calculator Features
 * Stack View
-  
   ![Screen Shot 2021-03-26 at 10 47 1](https://user-images.githubusercontent.com/73922909/112574430-ce874000-8e20-11eb-9085-12329e731039.jpg)
 
 * Shadow
-
-  Menggunakan Shadow dengan settingan pada extension UIButton:
+  Menggunakan Shadow dengan settingan pada Class IBDesignable:
   ```
   extension UIButton {
     open override func awakeFromNib() {
