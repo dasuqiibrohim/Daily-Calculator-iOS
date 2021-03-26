@@ -19,7 +19,9 @@ Contributors names and contact info
   Menggunakan Shadow dengan settingan:
   * Shadow Offset X: 0, Y: 4
   * Shadow Opacity 0.5
+
 # Libraries & Tools Used
+[SideMenu](https://github.com/jonkykong/SideMenu)
 
 # About Us
 
