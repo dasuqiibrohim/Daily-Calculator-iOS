@@ -15,7 +15,7 @@ Contributors names and contact info
 
 # How to Use
 Step 1:
-##### header H5
+#### header H5
 
 Download or clone this repo by using the link below:
 
