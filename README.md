@@ -14,7 +14,11 @@ Contributors names and contact info
 * [Uplabs](https://www.uplabs.com/posts/calculator-app-90e0923d-c26b-4f19-9320-4e716271c868)
 
 # Daily Calculator Features
-
+* Stack View
+* Shadow
+  Menggunakan Shadow dengan settingan:
+  * Shadow Offset X: 0, Y: 4
+  * Shadow Opacity 0.5
 # Libraries & Tools Used
 
 # About Us
