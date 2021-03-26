@@ -16,9 +16,20 @@ Contributors names and contact info
 # Daily Calculator Features
 * Stack View
 * Shadow
-  Menggunakan Shadow dengan settingan:
-  * Shadow Offset X: 0, Y: 4
-  * Shadow Opacity 0.5
+  Menggunakan Shadow dengan settingan pada extension UIButton:
+  ```
+  extension UIButton {
+    open override func awakeFromNib() {
+        layer.cornerRadius = 8
+        layer.shadowPath = UIBezierPath(rect: self.bounds).cgPath
+        layer.shadowRadius = 4
+        layer.shadowOffset = CGSize(width: 0, height: 4)
+        layer.shadowOpacity = 0.5
+    }
+  }
+  ```
+  
+![Uploading Simulator Screen Shot - iPhone 8 - 2021-03-26 at 10.28.00.png…]()
 
 # Libraries & Tools Used
 [SideMenu](https://github.com/jonkykong/SideMenu)
