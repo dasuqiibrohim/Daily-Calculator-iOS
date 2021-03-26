@@ -9,6 +9,9 @@ if you love this Daily Calculator, give us a star, you will be an encouragement 
 ```
 
 # Designer
+Contributors names and contact info
+* Stephanie Ogbudu
+* [Uplabs](https://www.uplabs.com/posts/calculator-app-90e0923d-c26b-4f19-9320-4e716271c868)
 
 # Daily Calculator Features
 
