@@ -15,8 +15,8 @@ Contributors names and contact info
 
 # Daily Calculator Features
 * Stack View
-
-![Screen Shot 2021-03-26 at 10 47 1](https://user-images.githubusercontent.com/73922909/112574430-ce874000-8e20-11eb-9085-12329e731039.jpg)
+  
+  ![Screen Shot 2021-03-26 at 10 47 1](https://user-images.githubusercontent.com/73922909/112574430-ce874000-8e20-11eb-9085-12329e731039.jpg)
 
 * Shadow
 
