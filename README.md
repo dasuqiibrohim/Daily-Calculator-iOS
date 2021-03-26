@@ -18,7 +18,7 @@ Contributors names and contact info
   ![Screen Shot 2021-03-26 at 10 47 1](https://user-images.githubusercontent.com/73922909/112574430-ce874000-8e20-11eb-9085-12329e731039.jpg)
 
 * Shadow
-  Menggunakan Shadow dengan settingan pada Class IBDesignable:
+  Use Shadow with setting on Class IBDesignable:
   ```
   extension UIButton {
     open override func awakeFromNib() {
