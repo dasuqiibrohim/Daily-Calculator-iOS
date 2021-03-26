@@ -28,8 +28,8 @@ Contributors names and contact info
     }
   }
   ```
-  
-![Uploading Simulator Screen Shot - iPhone 8 - 2021-03-26 at 10.28.00.png…]()
+  ![Simulator Screen Shot - iPhone 8 - 2021-03-26 at 10 28 00](https://user-images.githubusercontent.com/73922909/112573647-4d7b7900-8e1f-11eb-83df-58ab25645deb.png)
+
 
 # Libraries & Tools Used
 [SideMenu](https://github.com/jonkykong/SideMenu)
