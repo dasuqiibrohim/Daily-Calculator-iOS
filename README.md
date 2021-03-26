@@ -24,7 +24,7 @@ Contributors names and contact info
 [SideMenu](https://github.com/jonkykong/SideMenu)
 
 # About Us
-I am [Ibrohim Dasuqi](https://github.com/dasuqiibrohim) is a Software Developer focused on mobile iOS Developers in Indonesia. If you are interested in working with me, you can contact me via [Linkedin](https://www.linkedin.com/in/dasuqiibrohim/).
+I am [Ibrohim Dasuqi](https://github.com/dasuqiibrohim) from indonesia is a Software Developer focused on mobile iOS Developers. If you are interested in working with me, you can contact me via [Linkedin](https://www.linkedin.com/in/dasuqiibrohim/).
 
 # Conclusion
 This is a Daily Calculator our version, if you liked my work don't forget to give a ⭐ star the repo to show your support. if you want to lend a hand with the Daily Calculator then please feel free to submit an issue and/or pull request. :)
