@@ -9,3 +9,12 @@ if you love this Daily Calculator, give us a star, you will be an encouragement 
 ```
 
 # Designer
+
+# Daily Calculator Features
+
+# Libraries & Tools Used
+
+# About Us
+
+# Conclusion
+This is a Daily Calculator our version, if you liked my work don't forget to give a ⭐ star the repo to show your support. if you want to lend a hand with the Daily Calculator then please feel free to submit an issue and/or pull request. :)
