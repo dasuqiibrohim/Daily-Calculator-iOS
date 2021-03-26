@@ -28,7 +28,8 @@ Contributors names and contact info
     }
   }
   ```
-  ![Simulator Screen Shot - iPhone 8 - 2021-03-26 at 10 28 00](https://user-images.githubusercontent.com/73922909/112573647-4d7b7900-8e1f-11eb-83df-58ab25645deb.png)
+  ![Simulator Screen Shot - iPhone 8 - 2021-03-26 at 10 28 1](https://user-images.githubusercontent.com/73922909/112573823-a21ef400-8e1f-11eb-9b57-1d30a97cf582.jpg)
+
 
 
 # Libraries & Tools Used
