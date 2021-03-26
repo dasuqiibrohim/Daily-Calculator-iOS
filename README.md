@@ -13,6 +13,16 @@ Contributors names and contact info
 * Stephanie Ogbudu
 * [Uplabs](https://www.uplabs.com/posts/calculator-app-90e0923d-c26b-4f19-9320-4e716271c868)
 
+# How to Use
+Step 1:
+###### header H6
+
+Download or clone this repo by using the link below:
+
+```
+
+```
+
 # Daily Calculator Features
 * Stack View
 
