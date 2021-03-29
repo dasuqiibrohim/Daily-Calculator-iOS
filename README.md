@@ -1,4 +1,4 @@
-![untitled-project](https://user-images.githubusercontent.com/73922909/112793312-4195ee00-908f-11eb-9662-d7c358acc2e3.png)
+![dailyCalculator](https://user-images.githubusercontent.com/73922909/112814582-a2322480-90a9-11eb-98e1-3fa1d77127c5.jpg)
 
 
 # Daily Calculator iOS
