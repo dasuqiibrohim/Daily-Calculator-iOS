@@ -1,3 +1,6 @@
+![untitled-project](https://user-images.githubusercontent.com/73922909/112793312-4195ee00-908f-11eb-9662-d7c358acc2e3.png)
+
+
 # Daily Calculator iOS
 A Daily Calculator iOS project created in Swift using AutoLayout, IBDesignable, SubViews, dan Side Menu.
 
