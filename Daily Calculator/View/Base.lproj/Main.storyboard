@@ -1,0 +1,1098 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17506" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Eps-Se-rfw">
+    <device id="retina4_7" orientation="landscape" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Standard-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController storyboardIdentifier="ViewController" id="BYZ-38-t0r" customClass="ViewController" customModule="Daily_Calculator" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="667" height="375"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="x5t-Lf-ILb">
+                                <rect key="frame" x="0.0" y="32" width="667" height="343"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" red="0.19215686274509802" green="0.19215686274509802" blue="0.19215686274509802" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="x5t-Lf-ILb" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="EGc-le-F35"/>
+                            <constraint firstItem="x5t-Lf-ILb" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="H17-Ds-DuA"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="x5t-Lf-ILb" secondAttribute="trailing" id="Miz-TA-OGH"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="x5t-Lf-ILb" secondAttribute="bottom" id="VYX-Kp-gtF"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Standard" id="mxB-IR-nqa">
+                        <barButtonItem key="leftBarButtonItem" title="Item" image="align-left" id="tJT-tU-u8U">
+                            <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <connections>
+                                <action selector="sideMenuClick:" destination="BYZ-38-t0r" id="ilT-NL-O2Z"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="viewContent" destination="x5t-Lf-ILb" id="Prw-Mb-puK"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="545" y="72"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="QBg-XJ-GfW">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Eps-Se-rfw" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Bcq-UW-EPP">
+                        <rect key="frame" x="0.0" y="0.0" width="667" height="32"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" red="0.19215686274509802" green="0.19215686274509802" blue="0.19215686274509802" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="barTintColor" red="0.19215686274509802" green="0.19215686274509802" blue="0.19215686274509802" alpha="1" colorSpace="calibratedRGB"/>
+                        <textAttributes key="titleTextAttributes">
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </textAttributes>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="8y2-UH-dvI"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="TSU-Wz-vFZ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-246" y="72"/>
+        </scene>
+        <!--Scientific-->
+        <scene sceneID="LJS-O7-lEa">
+            <objects>
+                <viewController storyboardIdentifier="Standard" id="eKA-nu-GD1" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="YYn-jU-d9u">
+                        <rect key="frame" x="0.0" y="0.0" width="667" height="375"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="pTO-Y6-re0">
+                                <rect key="frame" x="10" y="12" width="647" height="351"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Gbe-zc-put">
+                                        <rect key="frame" x="0.0" y="0.0" width="647" height="140.5"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </view>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="RTV-ZL-qju">
+                                        <rect key="frame" x="0.0" y="148.5" width="647" height="202.5"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="rvi-Wl-Opl">
+                                                <rect key="frame" x="0.0" y="0.0" width="647" height="34"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7kL-01-71e" customClass="ShadowButton" customModule="Daily_Calculator" customModuleProvider="target">
+                                                        <rect key="frame" x="0.0" y="0.0" width="156" height="34"/>
+                                                        <color key="backgroundColor" red="1" green="0.74901960779999999" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="22"/>
+                                                        <state key="normal" title="AC">
+                                                            <color key="titleColor" red="0.19215686269999999" green="0.19215686269999999" blue="0.19215686269999999" alpha="1" colorSpace="calibratedRGB"/>
+                                                        </state>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WnU-oi-j4d" customClass="ShadowButton" customModule="Daily_Calculator" customModuleProvider="target">
+                                                        <rect key="frame" x="164" y="0.0" width="155.5" height="34"/>
+                                                        <color key="backgroundColor" red="0.29411764709999999" green="0.29411764709999999" blue="0.29411764709999999" alpha="1" colorSpace="calibratedRGB"/>
+                                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="22"/>
+                                                        <state key="normal" title="±">
+                                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        </state>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="61x-rm-iWe" customClass="ShadowButton" customModule="Daily_Calculator" customModuleProvider="target">
+                                                        <rect key="frame" x="327.5" y="0.0" width="156" height="34"/>
+                                                        <color key="backgroundColor" red="0.29411764709999999" green="0.29411764709999999" blue="0.29411764709999999" alpha="1" colorSpace="calibratedRGB"/>
+                                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="22"/>
+                                                        <state key="normal" title="%">
+                                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        </state>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2KU-1E-esq" customClass="ShadowButton" customModule="Daily_Calculator" customModuleProvider="target">
+                                                        <rect key="frame" x="491.5" y="0.0" width="155.5" height="34"/>
+                                                        <color key="backgroundColor" red="0.29411764709999999" green="0.29411764709999999" blue="0.29411764709999999" alpha="1" colorSpace="calibratedRGB"/>
+                                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="22"/>
+                                                        <state key="normal" title="÷">
+                                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        </state>
+                                                    </button>
+                                                </subviews>
+                                                <variation key="heightClass=compact-widthClass=compact" spacing="8"/>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="bp1-hh-bZh">
+                                                <rect key="frame" x="0.0" y="42" width="647" height="34"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Md1-DB-QIH" customClass="ShadowButton" customModule="Daily_Calculator" customModuleProvider="target">
+                                                        <rect key="frame" x="0.0" y="0.0" width="156" height="34"/>
+                                                        <color key="backgroundColor" red="0.29411764709999999" green="0.29411764709999999" blue="0.29411764709999999" alpha="1" colorSpace="calibratedRGB"/>
+                                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="22"/>
+                                                        <state key="normal" title="7">
+                                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        </state>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="w1F-S8-LLA" customClass="ShadowButton" customModule="Daily_Calculator" customModuleProvider="target">
+                                                        <rect key="frame" x="164" y="0.0" width="155.5" height="34"/>
+                                                        <color key="backgroundColor" red="0.29411764709999999" green="0.29411764709999999" blue="0.29411764709999999" alpha="1" colorSpace="calibratedRGB"/>
+                                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="22"/>
+                                                        <state key="normal" title="8">
+                                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        </state>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BVQ-rX-Y1o" customClass="ShadowButton" customModule="Daily_Calculator" customModuleProvider="target">
+                                                        <rect key="frame" x="327.5" y="0.0" width="156" height="34"/>
+                                                        <color key="backgroundColor" red="0.29411764709999999" green="0.29411764709999999" blue="0.29411764709999999" alpha="1" colorSpace="calibratedRGB"/>
+                                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="22"/>
+                                                        <state key="normal" title="9">
+                                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        </state>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZHn-Lj-AnM" customClass="ShadowButton" customModule="Daily_Calculator" customModuleProvider="target">
+                                                        <rect key="frame" x="491.5" y="0.0" width="155.5" height="34"/>
+                                                        <color key="backgroundColor" red="0.29411764709999999" green="0.29411764709999999" blue="0.29411764709999999" alpha="1" colorSpace="calibratedRGB"/>
+                                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="22"/>
+                                                        <state key="normal" title="x">
+                                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        </state>
+                                                    </button>
+                                                </subviews>
+                                                <variation key="heightClass=compact-widthClass=compact" spacing="8"/>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="bWj-Qj-q2O">
+                                                <rect key="frame" x="0.0" y="84" width="647" height="34.5"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ROG-06-2G1" customClass="ShadowButton" customModule="Daily_Calculator" customModuleProvider="target">
+                                                        <rect key="frame" x="0.0" y="0.0" width="156" height="34.5"/>
+                                                        <color key="backgroundColor" red="0.29411764709999999" green="0.29411764709999999" blue="0.29411764709999999" alpha="1" colorSpace="calibratedRGB"/>
+                                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="22"/>
+                                                        <state key="normal" title="4">
+                                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        </state>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="URQ-IG-IO3" customClass="ShadowButton" customModule="Daily_Calculator" customModuleProvider="target">
+                                                        <rect key="frame" x="164" y="0.0" width="155.5" height="34.5"/>
+                                                        <color key="backgroundColor" red="0.29411764709999999" green="0.29411764709999999" blue="0.29411764709999999" alpha="1" colorSpace="calibratedRGB"/>
+                                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="22"/>
+                                                        <state key="normal" title="5">
+                                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        </state>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qDo-eW-mAj" customClass="ShadowButton" customModule="Daily_Calculator" customModuleProvider="target">
+                                                        <rect key="frame" x="327.5" y="0.0" width="156" height="34.5"/>
+                                                        <color key="backgroundColor" red="0.29411764709999999" green="0.29411764709999999" blue="0.29411764709999999" alpha="1" colorSpace="calibratedRGB"/>
+                                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="22"/>
+                                                        <state key="normal" title="6">
+                                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        </state>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jYM-vC-Uxh" customClass="ShadowButton" customModule="Daily_Calculator" customModuleProvider="target">
+                                                        <rect key="frame" x="491.5" y="0.0" width="155.5" height="34.5"/>
+                                                        <color key="backgroundColor" red="0.29411764709999999" green="0.29411764709999999" blue="0.29411764709999999" alpha="1" colorSpace="calibratedRGB"/>
+                                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="22"/>
+                                                        <state key="normal" title="+">
+                                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        </state>
+                                                    </button>
+                                                </subviews>
+                                                <variation key="heightClass=compact-widthClass=compact" spacing="8"/>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="jMi-vn-aGp">
+                                                <rect key="frame" x="0.0" y="126.5" width="647" height="34"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="W3W-ab-HHf" customClass="ShadowButton" customModule="Daily_Calculator" customModuleProvider="target">
+                                                        <rect key="frame" x="0.0" y="0.0" width="156" height="34"/>
+                                                        <color key="backgroundColor" red="0.29411764709999999" green="0.29411764709999999" blue="0.29411764709999999" alpha="1" colorSpace="calibratedRGB"/>
+                                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="22"/>
+                                                        <state key="normal" title="1">
+                                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        </state>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="L3G-da-Weg" customClass="ShadowButton" customModule="Daily_Calculator" customModuleProvider="target">
+                                                        <rect key="frame" x="164" y="0.0" width="155.5" height="34"/>
+                                                        <color key="backgroundColor" red="0.29411764709999999" green="0.29411764709999999" blue="0.29411764709999999" alpha="1" colorSpace="calibratedRGB"/>
+                                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="22"/>
+                                                        <state key="normal" title="2">
+                                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        </state>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Moe-ct-pPx" customClass="ShadowButton" customModule="Daily_Calculator" customModuleProvider="target">
+                                                        <rect key="frame" x="327.5" y="0.0" width="156" height="34"/>
+                                                        <color key="backgroundColor" red="0.29411764709999999" green="0.29411764709999999" blue="0.29411764709999999" alpha="1" colorSpace="calibratedRGB"/>
+                                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="22"/>
+                                                        <state key="normal" title="3">
+                                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        </state>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vsY-Yw-YGA" customClass="ShadowButton" customModule="Daily_Calculator" customModuleProvider="target">
+                                                        <rect key="frame" x="491.5" y="0.0" width="155.5" height="34"/>
+                                                        <color key="backgroundColor" red="0.29411764709999999" green="0.29411764709999999" blue="0.29411764709999999" alpha="1" colorSpace="calibratedRGB"/>
+                                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="22"/>
+                                                        <state key="normal" title="-">
+                                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        </state>
+                                                    </button>
+                                                </subviews>
+                                                <variation key="heightClass=compact-widthClass=compact" spacing="8"/>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="VMJ-qw-Dbg">
+                                                <rect key="frame" x="0.0" y="168.5" width="647" height="34"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="N4B-pL-3hs" customClass="ShadowButton" customModule="Daily_Calculator" customModuleProvider="target">
+                                                        <rect key="frame" x="0.0" y="0.0" width="319.5" height="34"/>
+                                                        <color key="backgroundColor" red="0.29411764709999999" green="0.29411764709999999" blue="0.29411764709999999" alpha="1" colorSpace="calibratedRGB"/>
+                                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="22"/>
+                                                        <state key="normal" title="0">
+                                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        </state>
+                                                    </button>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="ERa-wS-LWJ">
+                                                        <rect key="frame" x="327.5" y="0.0" width="319.5" height="34"/>
+                                                        <subviews>
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nhH-bW-2vZ" customClass="ShadowButton" customModule="Daily_Calculator" customModuleProvider="target">
+                                                                <rect key="frame" x="0.0" y="0.0" width="156" height="34"/>
+                                                                <color key="backgroundColor" red="0.29411764709999999" green="0.29411764709999999" blue="0.29411764709999999" alpha="1" colorSpace="calibratedRGB"/>
+                                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="22"/>
+                                                                <state key="normal" title=".">
+                                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                </state>
+                                                            </button>
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vc0-KS-lSV" customClass="ShadowButton" customModule="Daily_Calculator" customModuleProvider="target">
+                                                                <rect key="frame" x="164" y="0.0" width="155.5" height="34"/>
+                                                                <color key="backgroundColor" red="0.29411764709999999" green="0.29411764709999999" blue="0.29411764709999999" alpha="1" colorSpace="calibratedRGB"/>
+                                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="22"/>
+                                                                <state key="normal" title="=">
+                                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                </state>
+                                                            </button>
+                                                        </subviews>
+                                                        <variation key="heightClass=compact-widthClass=compact" spacing="8"/>
+                                                    </stackView>
+                                                </subviews>
+                                                <variation key="heightClass=compact-widthClass=compact" spacing="8"/>
+                                            </stackView>
+                                        </subviews>
+                                        <variation key="heightClass=compact-widthClass=compact" spacing="8"/>
+                                    </stackView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="Gbe-zc-put" firstAttribute="height" secondItem="pTO-Y6-re0" secondAttribute="height" multiplier="0.4" id="tNu-1s-OAq"/>
+                                </constraints>
+                                <variation key="heightClass=compact-widthClass=compact" spacing="8"/>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="bDX-GZ-vVX"/>
+                        <color key="backgroundColor" red="0.19215686269999999" green="0.19215686269999999" blue="0.19215686269999999" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="pTO-Y6-re0" firstAttribute="top" secondItem="bDX-GZ-vVX" secondAttribute="top" constant="24" id="5Dt-G8-jOG">
+                                <variation key="heightClass=compact-widthClass=compact" constant="12"/>
+                            </constraint>
+                            <constraint firstAttribute="bottom" secondItem="pTO-Y6-re0" secondAttribute="bottom" constant="24" id="MHb-h1-jct">
+                                <variation key="heightClass=compact-widthClass=compact" constant="12"/>
+                            </constraint>
+                            <constraint firstItem="pTO-Y6-re0" firstAttribute="leading" secondItem="bDX-GZ-vVX" secondAttribute="leading" constant="23" id="Nka-T8-14d">
+                                <variation key="heightClass=compact-widthClass=compact" constant="10"/>
+                            </constraint>
+                            <constraint firstItem="bDX-GZ-vVX" firstAttribute="trailing" secondItem="pTO-Y6-re0" secondAttribute="trailing" constant="23" id="fqK-1f-rgr">
+                                <variation key="heightClass=compact-widthClass=compact" constant="10"/>
+                            </constraint>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Scientific" id="gky-jv-moM">
+                        <barButtonItem key="leftBarButtonItem" title="Item" image="align-left" id="IBd-Ah-zUN">
+                            <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <connections>
+                                <action selector="sideMenuClick:" destination="eKA-nu-GD1" id="DJk-4r-0h3"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Qfi-0K-W6H" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="545" y="738"/>
+        </scene>
+        <!--Scientific-->
+        <scene sceneID="e39-K2-sLD">
+            <objects>
+                <viewController storyboardIdentifier="Scientific" id="hv3-Sd-HoH" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="6E6-CP-AbW">
+                        <rect key="frame" x="0.0" y="0.0" width="667" height="375"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="pcl-Oa-BEQ">
+                                <rect key="frame" x="10" y="12" width="647" height="351"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vWE-Hy-wnj">
+                                        <rect key="frame" x="0.0" y="0.0" width="647" height="88"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </view>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="UY0-6h-uG5">
+                                        <rect key="frame" x="0.0" y="96" width="647" height="255"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="HIW-lz-rGJ">
+                                                <rect key="frame" x="0.0" y="0.0" width="647" height="29.5"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4Fd-93-bbW" customClass="ShadowButton" customModule="Daily_Calculator" customModuleProvider="target">
+                                                        <rect key="frame" x="0.0" y="0.0" width="123" height="29.5"/>
+                                                        <color key="backgroundColor" red="1" green="0.74901960779999999" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="22"/>
+                                                        <state key="normal" title="AC">
+                                                            <color key="titleColor" red="0.19215686269999999" green="0.19215686269999999" blue="0.19215686269999999" alpha="1" colorSpace="calibratedRGB"/>
+                                                        </state>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kXH-4e-aGT" customClass="ShadowButton" customModule="Daily_Calculator" customModuleProvider="target">
+                                                        <rect key="frame" x="131" y="0.0" width="123" height="29.5"/>
+                                                        <color key="backgroundColor" red="0.29411764709999999" green="0.29411764709999999" blue="0.29411764709999999" alpha="1" colorSpace="calibratedRGB"/>
+                                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="22"/>
+                                                        <state key="normal" title="%">
+                                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        </state>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wfw-4L-ulD" customClass="ShadowButton" customModule="Daily_Calculator" customModuleProvider="target">
+                                                        <rect key="frame" x="262" y="0.0" width="123" height="29.5"/>
+                                                        <color key="backgroundColor" red="0.29411764709999999" green="0.29411764709999999" blue="0.29411764709999999" alpha="1" colorSpace="calibratedRGB"/>
+                                                        <state key="normal" image="mdi_page-next">
+                                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        </state>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="A7Y-e1-i2Q" customClass="ShadowButton" customModule="Daily_Calculator" customModuleProvider="target">
+                                                        <rect key="frame" x="393" y="0.0" width="123" height="29.5"/>
+                                                        <color key="backgroundColor" red="0.29411764709999999" green="0.29411764709999999" blue="0.29411764709999999" alpha="1" colorSpace="calibratedRGB"/>
+                                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="22"/>
+                                                        <state key="normal" title="π">
+                                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        </state>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Alb-fd-KWz" customClass="ShadowButton" customModule="Daily_Calculator" customModuleProvider="target">
+                                                        <rect key="frame" x="524" y="0.0" width="123" height="29.5"/>
+                                                        <color key="backgroundColor" red="0.29411764709999999" green="0.29411764709999999" blue="0.29411764709999999" alpha="1" colorSpace="calibratedRGB"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                                        <state key="normal" image="delete">
+                                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        </state>
+                                                    </button>
+                                                </subviews>
+                                                <variation key="heightClass=compact-widthClass=compact" spacing="8"/>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="2Sz-uE-ogd">
+                                                <rect key="frame" x="0.0" y="37.5" width="647" height="29.5"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mCa-0e-LF4" customClass="ShadowButton" customModule="Daily_Calculator" customModuleProvider="target">
+                                                        <rect key="frame" x="0.0" y="0.0" width="123" height="29.5"/>
+                                                        <color key="backgroundColor" red="0.29411764709999999" green="0.29411764709999999" blue="0.29411764709999999" alpha="1" colorSpace="calibratedRGB"/>
+                                                        <state key="normal" image="x2">
+                                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        </state>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3Ns-Yu-8mY" customClass="ShadowButton" customModule="Daily_Calculator" customModuleProvider="target">
+                                                        <rect key="frame" x="131" y="0.0" width="123" height="29.5"/>
+                                                        <color key="backgroundColor" red="0.29411764709999999" green="0.29411764709999999" blue="0.29411764709999999" alpha="1" colorSpace="calibratedRGB"/>
+                                                        <state key="normal" image="x3">
+                                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        </state>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Oz4-X9-igd" customClass="ShadowButton" customModule="Daily_Calculator" customModuleProvider="target">
+                                                        <rect key="frame" x="262" y="0.0" width="123" height="29.5"/>
+                                                        <color key="backgroundColor" red="0.29411764709999999" green="0.29411764709999999" blue="0.29411764709999999" alpha="1" colorSpace="calibratedRGB"/>
+                                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="22"/>
+                                                        <state key="normal" title="sin">
+                                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        </state>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EH0-IL-lE3" customClass="ShadowButton" customModule="Daily_Calculator" customModuleProvider="target">
+                                                        <rect key="frame" x="393" y="0.0" width="123" height="29.5"/>
+                                                        <color key="backgroundColor" red="0.29411764709999999" green="0.29411764709999999" blue="0.29411764709999999" alpha="1" colorSpace="calibratedRGB"/>
+                                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="22"/>
+                                                        <state key="normal" title="cos">
+                                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        </state>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qib-Bi-FPU" customClass="ShadowButton" customModule="Daily_Calculator" customModuleProvider="target">
+                                                        <rect key="frame" x="524" y="0.0" width="123" height="29.5"/>
+                                                        <color key="backgroundColor" red="0.29411764709999999" green="0.29411764709999999" blue="0.29411764709999999" alpha="1" colorSpace="calibratedRGB"/>
+                                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="22"/>
+                                                        <state key="normal" title="tan">
+                                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        </state>
+                                                    </button>
+                                                </subviews>
+                                                <variation key="heightClass=compact-widthClass=compact" spacing="8"/>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="QzR-OK-ZWV">
+                                                <rect key="frame" x="0.0" y="75" width="647" height="29.5"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9xk-2a-wW5" customClass="ShadowButton" customModule="Daily_Calculator" customModuleProvider="target">
+                                                        <rect key="frame" x="0.0" y="0.0" width="123" height="29.5"/>
+                                                        <color key="backgroundColor" red="0.29411764709999999" green="0.29411764709999999" blue="0.29411764709999999" alpha="1" colorSpace="calibratedRGB"/>
+                                                        <state key="normal" image="ex">
+                                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        </state>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wxU-RA-PRK" customClass="ShadowButton" customModule="Daily_Calculator" customModuleProvider="target">
+                                                        <rect key="frame" x="131" y="0.0" width="123" height="29.5"/>
+                                                        <color key="backgroundColor" red="0.29411764709999999" green="0.29411764709999999" blue="0.29411764709999999" alpha="1" colorSpace="calibratedRGB"/>
+                                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="22"/>
+                                                        <state key="normal" title="1/x">
+                                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        </state>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Gzu-qC-xyN" customClass="ShadowButton" customModule="Daily_Calculator" customModuleProvider="target">
+                                                        <rect key="frame" x="262" y="0.0" width="123" height="29.5"/>
+                                                        <color key="backgroundColor" red="0.29411764709999999" green="0.29411764709999999" blue="0.29411764709999999" alpha="1" colorSpace="calibratedRGB"/>
+                                                        <state key="normal" image="sin-1">
+                                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        </state>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="h2V-7l-9sP" customClass="ShadowButton" customModule="Daily_Calculator" customModuleProvider="target">
+                                                        <rect key="frame" x="393" y="0.0" width="123" height="29.5"/>
+                                                        <color key="backgroundColor" red="0.29411764709999999" green="0.29411764709999999" blue="0.29411764709999999" alpha="1" colorSpace="calibratedRGB"/>
+                                                        <state key="normal" image="cos-1">
+                                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        </state>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xyi-iL-G4i" customClass="ShadowButton" customModule="Daily_Calculator" customModuleProvider="target">
+                                                        <rect key="frame" x="524" y="0.0" width="123" height="29.5"/>
+                                                        <color key="backgroundColor" red="0.29411764709999999" green="0.29411764709999999" blue="0.29411764709999999" alpha="1" colorSpace="calibratedRGB"/>
+                                                        <state key="normal" image="tan-1">
+                                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        </state>
+                                                    </button>
+                                                </subviews>
+                                                <variation key="heightClass=compact-widthClass=compact" spacing="8"/>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="nNT-3h-CXj">
+                                                <rect key="frame" x="0.0" y="112.5" width="647" height="29.5"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="04e-UY-Xge" customClass="ShadowButton" customModule="Daily_Calculator" customModuleProvider="target">
+                                                        <rect key="frame" x="0.0" y="0.0" width="123" height="29.5"/>
+                                                        <color key="backgroundColor" red="0.29411764709999999" green="0.29411764709999999" blue="0.29411764709999999" alpha="1" colorSpace="calibratedRGB"/>
+                                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="22"/>
+                                                        <state key="normal" title="7">
+                                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        </state>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="osZ-z5-jFF" customClass="ShadowButton" customModule="Daily_Calculator" customModuleProvider="target">
+                                                        <rect key="frame" x="131" y="0.0" width="123" height="29.5"/>
+                                                        <color key="backgroundColor" red="0.29411764709999999" green="0.29411764709999999" blue="0.29411764709999999" alpha="1" colorSpace="calibratedRGB"/>
+                                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="22"/>
+                                                        <state key="normal" title="8">
+                                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        </state>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MH7-4f-3Iu" customClass="ShadowButton" customModule="Daily_Calculator" customModuleProvider="target">
+                                                        <rect key="frame" x="262" y="0.0" width="123" height="29.5"/>
+                                                        <color key="backgroundColor" red="0.29411764709999999" green="0.29411764709999999" blue="0.29411764709999999" alpha="1" colorSpace="calibratedRGB"/>
+                                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="22"/>
+                                                        <state key="normal" title="9">
+                                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        </state>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gnD-31-x9S" customClass="ShadowButton" customModule="Daily_Calculator" customModuleProvider="target">
+                                                        <rect key="frame" x="393" y="0.0" width="123" height="29.5"/>
+                                                        <color key="backgroundColor" red="0.29411764709999999" green="0.29411764709999999" blue="0.29411764709999999" alpha="1" colorSpace="calibratedRGB"/>
+                                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="22"/>
+                                                        <state key="normal" title="÷">
+                                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        </state>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8vh-vw-XgR" customClass="ShadowButton" customModule="Daily_Calculator" customModuleProvider="target">
+                                                        <rect key="frame" x="524" y="0.0" width="123" height="29.5"/>
+                                                        <color key="backgroundColor" red="0.29411764709999999" green="0.29411764709999999" blue="0.29411764709999999" alpha="1" colorSpace="calibratedRGB"/>
+                                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="22"/>
+                                                        <state key="normal" title="x">
+                                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        </state>
+                                                    </button>
+                                                </subviews>
+                                                <variation key="heightClass=compact-widthClass=compact" spacing="8"/>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="AqF-r4-uCG">
+                                                <rect key="frame" x="0.0" y="150" width="647" height="30"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eh4-NC-tHg" customClass="ShadowButton" customModule="Daily_Calculator" customModuleProvider="target">
+                                                        <rect key="frame" x="0.0" y="0.0" width="123" height="30"/>
+                                                        <color key="backgroundColor" red="0.29411764709999999" green="0.29411764709999999" blue="0.29411764709999999" alpha="1" colorSpace="calibratedRGB"/>
+                                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="22"/>
+                                                        <state key="normal" title="4">
+                                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        </state>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jwk-8X-Rfc" customClass="ShadowButton" customModule="Daily_Calculator" customModuleProvider="target">
+                                                        <rect key="frame" x="131" y="0.0" width="123" height="30"/>
+                                                        <color key="backgroundColor" red="0.29411764709999999" green="0.29411764709999999" blue="0.29411764709999999" alpha="1" colorSpace="calibratedRGB"/>
+                                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="22"/>
+                                                        <state key="normal" title="5">
+                                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        </state>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pcd-88-b5p" customClass="ShadowButton" customModule="Daily_Calculator" customModuleProvider="target">
+                                                        <rect key="frame" x="262" y="0.0" width="123" height="30"/>
+                                                        <color key="backgroundColor" red="0.29411764709999999" green="0.29411764709999999" blue="0.29411764709999999" alpha="1" colorSpace="calibratedRGB"/>
+                                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="22"/>
+                                                        <state key="normal" title="6">
+                                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        </state>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mp7-dL-8e1" customClass="ShadowButton" customModule="Daily_Calculator" customModuleProvider="target">
+                                                        <rect key="frame" x="393" y="0.0" width="123" height="30"/>
+                                                        <color key="backgroundColor" red="0.29411764709999999" green="0.29411764709999999" blue="0.29411764709999999" alpha="1" colorSpace="calibratedRGB"/>
+                                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="22"/>
+                                                        <state key="normal" title="±">
+                                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        </state>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="s5f-N9-kkm" customClass="ShadowButton" customModule="Daily_Calculator" customModuleProvider="target">
+                                                        <rect key="frame" x="524" y="0.0" width="123" height="30"/>
+                                                        <color key="backgroundColor" red="0.29411764709999999" green="0.29411764709999999" blue="0.29411764709999999" alpha="1" colorSpace="calibratedRGB"/>
+                                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="22"/>
+                                                        <state key="normal" title="-">
+                                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        </state>
+                                                    </button>
+                                                </subviews>
+                                                <variation key="heightClass=compact-widthClass=compact" spacing="8"/>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="Sv4-oY-Cxm">
+                                                <rect key="frame" x="0.0" y="188" width="647" height="29.5"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="urB-s7-w5E" customClass="ShadowButton" customModule="Daily_Calculator" customModuleProvider="target">
+                                                        <rect key="frame" x="0.0" y="0.0" width="123" height="29.5"/>
+                                                        <color key="backgroundColor" red="0.29411764709999999" green="0.29411764709999999" blue="0.29411764709999999" alpha="1" colorSpace="calibratedRGB"/>
+                                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="22"/>
+                                                        <state key="normal" title="1">
+                                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        </state>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iVv-d0-zbW" customClass="ShadowButton" customModule="Daily_Calculator" customModuleProvider="target">
+                                                        <rect key="frame" x="131" y="0.0" width="123" height="29.5"/>
+                                                        <color key="backgroundColor" red="0.29411764709999999" green="0.29411764709999999" blue="0.29411764709999999" alpha="1" colorSpace="calibratedRGB"/>
+                                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="22"/>
+                                                        <state key="normal" title="2">
+                                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        </state>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Sgc-Z5-XnS" customClass="ShadowButton" customModule="Daily_Calculator" customModuleProvider="target">
+                                                        <rect key="frame" x="262" y="0.0" width="123" height="29.5"/>
+                                                        <color key="backgroundColor" red="0.29411764709999999" green="0.29411764709999999" blue="0.29411764709999999" alpha="1" colorSpace="calibratedRGB"/>
+                                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="22"/>
+                                                        <state key="normal" title="3">
+                                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        </state>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fcD-sC-7xM" customClass="ShadowButton" customModule="Daily_Calculator" customModuleProvider="target">
+                                                        <rect key="frame" x="393" y="0.0" width="123" height="29.5"/>
+                                                        <color key="backgroundColor" red="0.29411764709999999" green="0.29411764709999999" blue="0.29411764709999999" alpha="1" colorSpace="calibratedRGB"/>
+                                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="22"/>
+                                                        <state key="normal" title="n!">
+                                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        </state>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9CA-H5-tRM" customClass="ShadowButton" customModule="Daily_Calculator" customModuleProvider="target">
+                                                        <rect key="frame" x="524" y="0.0" width="123" height="29.5"/>
+                                                        <color key="backgroundColor" red="0.29411764709999999" green="0.29411764709999999" blue="0.29411764709999999" alpha="1" colorSpace="calibratedRGB"/>
+                                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="22"/>
+                                                        <state key="normal" title="÷">
+                                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        </state>
+                                                    </button>
+                                                </subviews>
+                                                <variation key="heightClass=compact-widthClass=compact" spacing="8"/>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="hjY-Mv-L6B">
+                                                <rect key="frame" x="0.0" y="225.5" width="647" height="29.5"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Eka-ik-Fn0" customClass="ShadowButton" customModule="Daily_Calculator" customModuleProvider="target">
+                                                        <rect key="frame" x="0.0" y="0.0" width="123" height="29.5"/>
+                                                        <color key="backgroundColor" red="0.29411764709999999" green="0.29411764709999999" blue="0.29411764709999999" alpha="1" colorSpace="calibratedRGB"/>
+                                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="22"/>
+                                                        <state key="normal" title="0">
+                                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        </state>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="F6q-d5-FHF" customClass="ShadowButton" customModule="Daily_Calculator" customModuleProvider="target">
+                                                        <rect key="frame" x="131" y="0.0" width="123" height="29.5"/>
+                                                        <color key="backgroundColor" red="0.29411764709999999" green="0.29411764709999999" blue="0.29411764709999999" alpha="1" colorSpace="calibratedRGB"/>
+                                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="22"/>
+                                                        <state key="normal" title=".">
+                                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        </state>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xrC-K2-Itz" customClass="ShadowButton" customModule="Daily_Calculator" customModuleProvider="target">
+                                                        <rect key="frame" x="262" y="0.0" width="123" height="29.5"/>
+                                                        <color key="backgroundColor" red="0.29411764709999999" green="0.29411764709999999" blue="0.29411764709999999" alpha="1" colorSpace="calibratedRGB"/>
+                                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="22"/>
+                                                        <state key="normal" title="(">
+                                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        </state>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bb3-wi-4kP" customClass="ShadowButton" customModule="Daily_Calculator" customModuleProvider="target">
+                                                        <rect key="frame" x="393" y="0.0" width="123" height="29.5"/>
+                                                        <color key="backgroundColor" red="0.29411764709999999" green="0.29411764709999999" blue="0.29411764709999999" alpha="1" colorSpace="calibratedRGB"/>
+                                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="22"/>
+                                                        <state key="normal" title=")">
+                                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        </state>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="w27-c1-dtA" customClass="ShadowButton" customModule="Daily_Calculator" customModuleProvider="target">
+                                                        <rect key="frame" x="524" y="0.0" width="123" height="29.5"/>
+                                                        <color key="backgroundColor" red="0.29411764709999999" green="0.29411764709999999" blue="0.29411764709999999" alpha="1" colorSpace="calibratedRGB"/>
+                                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="22"/>
+                                                        <state key="normal" title="=">
+                                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        </state>
+                                                    </button>
+                                                </subviews>
+                                                <variation key="heightClass=compact-widthClass=compact" spacing="8"/>
+                                            </stackView>
+                                        </subviews>
+                                        <variation key="heightClass=compact-widthClass=compact" spacing="8"/>
+                                    </stackView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="vWE-Hy-wnj" firstAttribute="height" secondItem="pcl-Oa-BEQ" secondAttribute="height" multiplier="0.25" id="tyI-JV-1Wi"/>
+                                </constraints>
+                                <variation key="heightClass=compact-widthClass=compact" spacing="8"/>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="pSN-rO-MUP"/>
+                        <color key="backgroundColor" red="0.19215686269999999" green="0.19215686269999999" blue="0.19215686269999999" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="pSN-rO-MUP" firstAttribute="trailing" secondItem="pcl-Oa-BEQ" secondAttribute="trailing" constant="23" id="3dy-0i-brA">
+                                <variation key="heightClass=compact-widthClass=compact" constant="10"/>
+                            </constraint>
+                            <constraint firstItem="pcl-Oa-BEQ" firstAttribute="top" secondItem="pSN-rO-MUP" secondAttribute="top" constant="24" id="Cww-0Q-oCP">
+                                <variation key="heightClass=compact-widthClass=compact" constant="12"/>
+                            </constraint>
+                            <constraint firstItem="pcl-Oa-BEQ" firstAttribute="leading" secondItem="pSN-rO-MUP" secondAttribute="leading" constant="23" id="Myi-aQ-qyd">
+                                <variation key="heightClass=compact-widthClass=compact" constant="10"/>
+                            </constraint>
+                            <constraint firstAttribute="bottom" secondItem="pcl-Oa-BEQ" secondAttribute="bottom" constant="24" id="ru1-vA-MVm">
+                                <variation key="heightClass=compact-widthClass=compact" constant="12"/>
+                            </constraint>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Scientific" id="pmo-wQ-1XM">
+                        <barButtonItem key="leftBarButtonItem" title="Item" image="align-left" id="ZqF-pc-WnI">
+                            <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <connections>
+                                <action selector="sideMenuClick:" destination="hv3-Sd-HoH" id="jxA-Nu-GpK"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="rxQ-Ji-T06" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1170" y="737"/>
+        </scene>
+        <!--Scientific-->
+        <scene sceneID="0kQ-oI-ZGr">
+            <objects>
+                <viewController storyboardIdentifier="Curency" id="Hsl-Om-QpJ" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="TEW-c1-awb">
+                        <rect key="frame" x="0.0" y="0.0" width="667" height="375"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="b95-F7-Wmw">
+                                <rect key="frame" x="23" y="24" width="621" height="327"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="g4s-Kt-cCJ">
+                                        <rect key="frame" x="0.0" y="0.0" width="621" height="155.5"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </view>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="8XR-RC-U3b">
+                                        <rect key="frame" x="0.0" y="171.5" width="621" height="155.5"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="I2S-ta-OqZ">
+                                                <rect key="frame" x="0.0" y="0.0" width="621" height="72"/>
+                                                <subviews>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="32a-a5-Tkt">
+                                                        <rect key="frame" x="0.0" y="0.0" width="146.5" height="72"/>
+                                                        <subviews>
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GlW-Ck-z1k" customClass="ShadowButton" customModule="Daily_Calculator" customModuleProvider="target">
+                                                                <rect key="frame" x="0.0" y="0.0" width="146.5" height="30"/>
+                                                                <color key="backgroundColor" red="0.36466276650000001" green="0.36473065609999999" blue="0.3646585047" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="22"/>
+                                                                <state key="normal" title="7">
+                                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                </state>
+                                                            </button>
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="M1o-Yc-s0Q" customClass="ShadowButton" customModule="Daily_Calculator" customModuleProvider="target">
+                                                                <rect key="frame" x="0.0" y="42" width="146.5" height="30"/>
+                                                                <color key="backgroundColor" red="0.29411764709999999" green="0.29411764709999999" blue="0.29411764709999999" alpha="1" colorSpace="calibratedRGB"/>
+                                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="22"/>
+                                                                <state key="normal" title="4">
+                                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                </state>
+                                                            </button>
+                                                        </subviews>
+                                                    </stackView>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="cIP-qG-euZ">
+                                                        <rect key="frame" x="158.5" y="0.0" width="146" height="72"/>
+                                                        <subviews>
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mdV-d8-Qx3" customClass="ShadowButton" customModule="Daily_Calculator" customModuleProvider="target">
+                                                                <rect key="frame" x="0.0" y="0.0" width="146" height="30"/>
+                                                                <color key="backgroundColor" red="0.29411764709999999" green="0.29411764709999999" blue="0.29411764709999999" alpha="1" colorSpace="calibratedRGB"/>
+                                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="22"/>
+                                                                <state key="normal" title="8">
+                                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                </state>
+                                                            </button>
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xix-b6-I8j" customClass="ShadowButton" customModule="Daily_Calculator" customModuleProvider="target">
+                                                                <rect key="frame" x="0.0" y="42" width="146" height="30"/>
+                                                                <color key="backgroundColor" red="0.29411764709999999" green="0.29411764709999999" blue="0.29411764709999999" alpha="1" colorSpace="calibratedRGB"/>
+                                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="22"/>
+                                                                <state key="normal" title="5">
+                                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                </state>
+                                                            </button>
+                                                        </subviews>
+                                                    </stackView>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="Sfw-DC-Sdp">
+                                                        <rect key="frame" x="316.5" y="0.0" width="146.5" height="72"/>
+                                                        <subviews>
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="91b-SS-E90" customClass="ShadowButton" customModule="Daily_Calculator" customModuleProvider="target">
+                                                                <rect key="frame" x="0.0" y="0.0" width="146.5" height="30"/>
+                                                                <color key="backgroundColor" red="0.29411764709999999" green="0.29411764709999999" blue="0.29411764709999999" alpha="1" colorSpace="calibratedRGB"/>
+                                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="22"/>
+                                                                <state key="normal" title="9">
+                                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                </state>
+                                                            </button>
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LKW-mT-4Pf" customClass="ShadowButton" customModule="Daily_Calculator" customModuleProvider="target">
+                                                                <rect key="frame" x="0.0" y="42" width="146.5" height="30"/>
+                                                                <color key="backgroundColor" red="0.29411764709999999" green="0.29411764709999999" blue="0.29411764709999999" alpha="1" colorSpace="calibratedRGB"/>
+                                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="22"/>
+                                                                <state key="normal" title="6">
+                                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                </state>
+                                                            </button>
+                                                        </subviews>
+                                                    </stackView>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wk2-kb-04E" customClass="ShadowButton" customModule="Daily_Calculator" customModuleProvider="target">
+                                                        <rect key="frame" x="475" y="0.0" width="146" height="72"/>
+                                                        <color key="backgroundColor" red="1" green="0.79378575090000003" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <state key="normal" title="AC">
+                                                            <color key="titleColor" red="0.25488215679999998" green="0.25499251480000001" blue="0.25078287719999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        </state>
+                                                    </button>
+                                                </subviews>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="e7C-a1-cnz">
+                                                <rect key="frame" x="0.0" y="84" width="621" height="71.5"/>
+                                                <subviews>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="Kix-iA-aWc">
+                                                        <rect key="frame" x="0.0" y="0.0" width="304.5" height="71.5"/>
+                                                        <subviews>
+                                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="k5r-ms-SWr">
+                                                                <rect key="frame" x="0.0" y="0.0" width="304.5" height="29.5"/>
+                                                                <subviews>
+                                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fax-xj-keM" customClass="ShadowButton" customModule="Daily_Calculator" customModuleProvider="target">
+                                                                        <rect key="frame" x="0.0" y="0.0" width="146.5" height="29.5"/>
+                                                                        <color key="backgroundColor" red="0.29411764709999999" green="0.29411764709999999" blue="0.29411764709999999" alpha="1" colorSpace="calibratedRGB"/>
+                                                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="22"/>
+                                                                        <state key="normal" title="1">
+                                                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                        </state>
+                                                                    </button>
+                                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jfT-eZ-0YY" customClass="ShadowButton" customModule="Daily_Calculator" customModuleProvider="target">
+                                                                        <rect key="frame" x="158.5" y="0.0" width="146" height="29.5"/>
+                                                                        <color key="backgroundColor" red="0.29411764709999999" green="0.29411764709999999" blue="0.29411764709999999" alpha="1" colorSpace="calibratedRGB"/>
+                                                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="22"/>
+                                                                        <state key="normal" title="2">
+                                                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                        </state>
+                                                                    </button>
+                                                                </subviews>
+                                                            </stackView>
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xjE-DN-vet" customClass="ShadowButton" customModule="Daily_Calculator" customModuleProvider="target">
+                                                                <rect key="frame" x="0.0" y="41.5" width="304.5" height="30"/>
+                                                                <color key="backgroundColor" red="0.29411764709999999" green="0.29411764709999999" blue="0.29411764709999999" alpha="1" colorSpace="calibratedRGB"/>
+                                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="22"/>
+                                                                <state key="normal" title="0">
+                                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                </state>
+                                                            </button>
+                                                        </subviews>
+                                                    </stackView>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="OCO-XR-QVa">
+                                                        <rect key="frame" x="316.5" y="0.0" width="304.5" height="71.5"/>
+                                                        <subviews>
+                                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="1h9-Gk-36o">
+                                                                <rect key="frame" x="0.0" y="0.0" width="146.5" height="71.5"/>
+                                                                <subviews>
+                                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="B2f-n0-fnS" customClass="ShadowButton" customModule="Daily_Calculator" customModuleProvider="target">
+                                                                        <rect key="frame" x="0.0" y="0.0" width="146.5" height="29.5"/>
+                                                                        <color key="backgroundColor" red="0.29411764709999999" green="0.29411764709999999" blue="0.29411764709999999" alpha="1" colorSpace="calibratedRGB"/>
+                                                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="22"/>
+                                                                        <state key="normal" title="3">
+                                                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                        </state>
+                                                                    </button>
+                                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OSw-OR-FOF" customClass="ShadowButton" customModule="Daily_Calculator" customModuleProvider="target">
+                                                                        <rect key="frame" x="0.0" y="41.5" width="146.5" height="30"/>
+                                                                        <color key="backgroundColor" red="0.29411764709999999" green="0.29411764709999999" blue="0.29411764709999999" alpha="1" colorSpace="calibratedRGB"/>
+                                                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="22"/>
+                                                                        <state key="normal" title=".">
+                                                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                        </state>
+                                                                    </button>
+                                                                </subviews>
+                                                            </stackView>
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AQp-sU-qrz" customClass="ShadowButton" customModule="Daily_Calculator" customModuleProvider="target">
+                                                                <rect key="frame" x="158.5" y="0.0" width="146" height="71.5"/>
+                                                                <color key="backgroundColor" red="0.29411764709999999" green="0.29411764709999999" blue="0.29411764709999999" alpha="1" colorSpace="calibratedRGB"/>
+                                                                <state key="normal" image="delete">
+                                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                </state>
+                                                            </button>
+                                                        </subviews>
+                                                    </stackView>
+                                                </subviews>
+                                            </stackView>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="QSL-0m-Unj"/>
+                        <color key="backgroundColor" red="0.19215686269999999" green="0.19215686269999999" blue="0.19215686269999999" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="QSL-0m-Unj" firstAttribute="trailing" secondItem="b95-F7-Wmw" secondAttribute="trailing" constant="23" id="TsU-pV-gqt"/>
+                            <constraint firstItem="b95-F7-Wmw" firstAttribute="top" secondItem="QSL-0m-Unj" secondAttribute="top" constant="24" id="ocS-Ae-3sh"/>
+                            <constraint firstItem="b95-F7-Wmw" firstAttribute="leading" secondItem="QSL-0m-Unj" secondAttribute="leading" constant="23" id="rmt-4c-85T"/>
+                            <constraint firstAttribute="bottom" secondItem="b95-F7-Wmw" secondAttribute="bottom" constant="24" id="xQ2-Hb-gcr"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Scientific" id="3t9-G6-Pjd">
+                        <barButtonItem key="leftBarButtonItem" title="Item" image="align-left" id="34i-gm-ZJh">
+                            <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <connections>
+                                <action selector="sideMenuClick:" destination="Hsl-Om-QpJ" id="iK4-np-Z4i"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="waj-Yn-S34" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1839" y="736"/>
+        </scene>
+    </scenes>
+    <designables>
+        <designable name="04e-UY-Xge">
+            <size key="intrinsicContentSize" width="30" height="39"/>
+        </designable>
+        <designable name="2KU-1E-esq">
+            <size key="intrinsicContentSize" width="30" height="39"/>
+        </designable>
+        <designable name="3Ns-Yu-8mY">
+            <size key="intrinsicContentSize" width="19" height="22"/>
+        </designable>
+        <designable name="4Fd-93-bbW">
+            <size key="intrinsicContentSize" width="31" height="39"/>
+        </designable>
+        <designable name="61x-rm-iWe">
+            <size key="intrinsicContentSize" width="30" height="39"/>
+        </designable>
+        <designable name="7kL-01-71e">
+            <size key="intrinsicContentSize" width="31" height="39"/>
+        </designable>
+        <designable name="8vh-vw-XgR">
+            <size key="intrinsicContentSize" width="30" height="39"/>
+        </designable>
+        <designable name="91b-SS-E90">
+            <size key="intrinsicContentSize" width="30" height="39"/>
+        </designable>
+        <designable name="9CA-H5-tRM">
+            <size key="intrinsicContentSize" width="30" height="39"/>
+        </designable>
+        <designable name="9xk-2a-wW5">
+            <size key="intrinsicContentSize" width="19" height="22"/>
+        </designable>
+        <designable name="A7Y-e1-i2Q">
+            <size key="intrinsicContentSize" width="30" height="39"/>
+        </designable>
+        <designable name="AQp-sU-qrz">
+            <size key="intrinsicContentSize" width="41" height="24"/>
+        </designable>
+        <designable name="Alb-fd-KWz">
+            <size key="intrinsicContentSize" width="41" height="24"/>
+        </designable>
+        <designable name="B2f-n0-fnS">
+            <size key="intrinsicContentSize" width="30" height="39"/>
+        </designable>
+        <designable name="BVQ-rX-Y1o">
+            <size key="intrinsicContentSize" width="30" height="39"/>
+        </designable>
+        <designable name="EH0-IL-lE3">
+            <size key="intrinsicContentSize" width="37" height="39"/>
+        </designable>
+        <designable name="Eka-ik-Fn0">
+            <size key="intrinsicContentSize" width="30" height="39"/>
+        </designable>
+        <designable name="F6q-d5-FHF">
+            <size key="intrinsicContentSize" width="30" height="39"/>
+        </designable>
+        <designable name="GlW-Ck-z1k">
+            <size key="intrinsicContentSize" width="30" height="39"/>
+        </designable>
+        <designable name="Gzu-qC-xyN">
+            <size key="intrinsicContentSize" width="39" height="22"/>
+        </designable>
+        <designable name="L3G-da-Weg">
+            <size key="intrinsicContentSize" width="30" height="39"/>
+        </designable>
+        <designable name="LKW-mT-4Pf">
+            <size key="intrinsicContentSize" width="30" height="39"/>
+        </designable>
+        <designable name="M1o-Yc-s0Q">
+            <size key="intrinsicContentSize" width="30" height="39"/>
+        </designable>
+        <designable name="MH7-4f-3Iu">
+            <size key="intrinsicContentSize" width="30" height="39"/>
+        </designable>
+        <designable name="Md1-DB-QIH">
+            <size key="intrinsicContentSize" width="30" height="39"/>
+        </designable>
+        <designable name="Moe-ct-pPx">
+            <size key="intrinsicContentSize" width="30" height="39"/>
+        </designable>
+        <designable name="N4B-pL-3hs">
+            <size key="intrinsicContentSize" width="30" height="39"/>
+        </designable>
+        <designable name="OSw-OR-FOF">
+            <size key="intrinsicContentSize" width="30" height="39"/>
+        </designable>
+        <designable name="Oz4-X9-igd">
+            <size key="intrinsicContentSize" width="31" height="39"/>
+        </designable>
+        <designable name="Qib-Bi-FPU">
+            <size key="intrinsicContentSize" width="34" height="39"/>
+        </designable>
+        <designable name="ROG-06-2G1">
+            <size key="intrinsicContentSize" width="30" height="39"/>
+        </designable>
+        <designable name="Sgc-Z5-XnS">
+            <size key="intrinsicContentSize" width="30" height="39"/>
+        </designable>
+        <designable name="URQ-IG-IO3">
+            <size key="intrinsicContentSize" width="30" height="39"/>
+        </designable>
+        <designable name="Vc0-KS-lSV">
+            <size key="intrinsicContentSize" width="30" height="39"/>
+        </designable>
+        <designable name="W3W-ab-HHf">
+            <size key="intrinsicContentSize" width="30" height="39"/>
+        </designable>
+        <designable name="Wfw-4L-ulD">
+            <size key="intrinsicContentSize" width="24" height="24"/>
+        </designable>
+        <designable name="WnU-oi-j4d">
+            <size key="intrinsicContentSize" width="30" height="39"/>
+        </designable>
+        <designable name="ZHn-Lj-AnM">
+            <size key="intrinsicContentSize" width="30" height="39"/>
+        </designable>
+        <designable name="bb3-wi-4kP">
+            <size key="intrinsicContentSize" width="30" height="39"/>
+        </designable>
+        <designable name="eh4-NC-tHg">
+            <size key="intrinsicContentSize" width="30" height="39"/>
+        </designable>
+        <designable name="fax-xj-keM">
+            <size key="intrinsicContentSize" width="30" height="39"/>
+        </designable>
+        <designable name="fcD-sC-7xM">
+            <size key="intrinsicContentSize" width="30" height="39"/>
+        </designable>
+        <designable name="gnD-31-x9S">
+            <size key="intrinsicContentSize" width="30" height="39"/>
+        </designable>
+        <designable name="h2V-7l-9sP">
+            <size key="intrinsicContentSize" width="43" height="22"/>
+        </designable>
+        <designable name="iVv-d0-zbW">
+            <size key="intrinsicContentSize" width="30" height="39"/>
+        </designable>
+        <designable name="jYM-vC-Uxh">
+            <size key="intrinsicContentSize" width="30" height="39"/>
+        </designable>
+        <designable name="jfT-eZ-0YY">
+            <size key="intrinsicContentSize" width="30" height="39"/>
+        </designable>
+        <designable name="jwk-8X-Rfc">
+            <size key="intrinsicContentSize" width="30" height="39"/>
+        </designable>
+        <designable name="kXH-4e-aGT">
+            <size key="intrinsicContentSize" width="30" height="39"/>
+        </designable>
+        <designable name="mCa-0e-LF4">
+            <size key="intrinsicContentSize" width="19" height="22"/>
+        </designable>
+        <designable name="mdV-d8-Qx3">
+            <size key="intrinsicContentSize" width="30" height="39"/>
+        </designable>
+        <designable name="mp7-dL-8e1">
+            <size key="intrinsicContentSize" width="30" height="39"/>
+        </designable>
+        <designable name="nhH-bW-2vZ">
+            <size key="intrinsicContentSize" width="30" height="39"/>
+        </designable>
+        <designable name="osZ-z5-jFF">
+            <size key="intrinsicContentSize" width="30" height="39"/>
+        </designable>
+        <designable name="pcd-88-b5p">
+            <size key="intrinsicContentSize" width="30" height="39"/>
+        </designable>
+        <designable name="qDo-eW-mAj">
+            <size key="intrinsicContentSize" width="30" height="39"/>
+        </designable>
+        <designable name="s5f-N9-kkm">
+            <size key="intrinsicContentSize" width="30" height="39"/>
+        </designable>
+        <designable name="urB-s7-w5E">
+            <size key="intrinsicContentSize" width="30" height="39"/>
+        </designable>
+        <designable name="vsY-Yw-YGA">
+            <size key="intrinsicContentSize" width="30" height="39"/>
+        </designable>
+        <designable name="w1F-S8-LLA">
+            <size key="intrinsicContentSize" width="30" height="39"/>
+        </designable>
+        <designable name="w27-c1-dtA">
+            <size key="intrinsicContentSize" width="30" height="39"/>
+        </designable>
+        <designable name="wk2-kb-04E">
+            <size key="intrinsicContentSize" width="30" height="34"/>
+        </designable>
+        <designable name="wxU-RA-PRK">
+            <size key="intrinsicContentSize" width="30" height="39"/>
+        </designable>
+        <designable name="xix-b6-I8j">
+            <size key="intrinsicContentSize" width="30" height="39"/>
+        </designable>
+        <designable name="xjE-DN-vet">
+            <size key="intrinsicContentSize" width="30" height="39"/>
+        </designable>
+        <designable name="xrC-K2-Itz">
+            <size key="intrinsicContentSize" width="30" height="39"/>
+        </designable>
+        <designable name="xyi-iL-G4i">
+            <size key="intrinsicContentSize" width="44" height="22"/>
+        </designable>
+    </designables>
+    <resources>
+        <image name="align-left" width="33" height="32"/>
+        <image name="cos-1" width="43" height="19"/>
+        <image name="delete" width="41" height="24"/>
+        <image name="ex" width="19" height="17"/>
+        <image name="mdi_page-next" width="24" height="24"/>
+        <image name="sin-1" width="39" height="19"/>
+        <image name="tan-1" width="44" height="19"/>
+        <image name="x2" width="19" height="19"/>
+        <image name="x3" width="19" height="19"/>
+    </resources>
+</document>
