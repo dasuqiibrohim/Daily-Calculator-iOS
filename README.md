@@ -2,7 +2,7 @@
 
 
 # Daily Calculator iOS
-A Daily Calculator iOS project created in Swift using AutoLayout, IBDesignable, SubViews, dan Side Menu.
+A Daily Calculator iOS project created in Swift using Relative Layout, IBDesignable, SubViews, dan Side Menu.
 
 # Getting Started
 Daily Calculator contains the implementation of Automatic Layout. Auto Layout makes it easy to support multiple screen sizes in your app. Auto Layout on swift, Make apps look great in any orientation on various devices.
