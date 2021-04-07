@@ -59,7 +59,7 @@ pod install
   ![Simulator Screen Shot - iPhone 8 - 2021-03-26 at 10 42 1](https://user-images.githubusercontent.com/73922909/112574023-080b7b80-8e20-11eb-8272-2b2825461aac.jpg)
 
 # Libraries & Tools Used
-[SideMenu](https://github.com/jonkykong/SideMenu)
+[SideMenu](https://github.com/jonkykong/SideMenu) (^6.5.0)
 
 # About Us
 I am [Ibrohim Dasuqi](https://github.com/dasuqiibrohim) from indonesia is a Software Developer focused on mobile iOS Developers. If you are interested in working with me, you can contact me via [Linkedin](https://www.linkedin.com/in/dasuqiibrohim/).
